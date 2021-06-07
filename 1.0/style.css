@@ -1,0 +1,28 @@
+#box{
+    display: flex;
+    width: 400px;
+    flex-wrap: wrap;
+    flex-direction: center;
+}
+#vvod{
+    width: 330px;
+    height: 50px;
+    margin-left: 10px;
+}
+.number{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: lightskyblue;
+    border: 1px solid black;
+    color: white;
+    margin: 10px;
+}
+p{
+    font-size: 30px;
+    margin: 10px;
+}

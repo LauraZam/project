@@ -1,0 +1,10 @@
+.item__item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.item__actions{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
