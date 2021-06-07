@@ -1,0 +1,63 @@
+.container{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.form{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#nameInput{
+    width: 80%;
+    border: 1.5px solid rgb(29, 104, 206);
+    border-radius: 4px;
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+#submitBtn{
+    width: 20%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: rgb(165, 213, 249);
+}
+
+.item__item{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.item__name{
+    width: 90%;
+}
+
+.item__actions{
+    display: flex;
+    width: 10%;
+    justify-content: space-around;
+}
+
+.tac{
+    text-align: center;
+}
+
+.btn_noBorder{
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: red;
+    font-weight: 700;
+    font-size: 14px;
+}
