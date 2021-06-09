@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<style>
+    .students{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #block{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: grey;
+        height: 150px;
+        width: 150px;
+    }
+</style>
+<body>
+<h1>students page</h1>
+    <script>
+        function showStudents(){
+            $.ajax({
+                url: "http://localhost:8081/returnstudents",
+                method: "get",
+                success: function(response){
+                    let students = JSON.parse(response)
+                    console.log(students);
+                    for(let i = 0; i < students.length; i++){
+                        $("#block").append(`
+                            <span>${students[i].fullname}</span>
+                            <span>${students[i].age}</span>
+                            <span>${students[i].group}</span>
+                        `)
+                    }
+                        
+                },
+                error: function(){
+                    alert("Error")
+                }
+            })
+        }
+
+        showStudents();
+    </script>
+
+
+    <div class="students">
+        <div id="block">
+        </div>
+    </div>
+</body>
+</html>
